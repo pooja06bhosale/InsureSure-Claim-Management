@@ -1,0 +1,21 @@
+add @EnableEurekaServer on main class
+add netflix eureka dependency
+
+-----------------------------------------
+add in application.properties file
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+    here both false means this services not making call to any other services
+----------------------------------------------
+
+

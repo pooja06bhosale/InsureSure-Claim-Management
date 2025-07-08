@@ -1,0 +1,12 @@
+
+
+
+jwt:
+  access-token-expiry: 1800000        # 30 minutes
+  refresh-token-expiry: 259200000     # 3 days
+  email-verification-expiry: 600000   # 10 minutes
+  password-reset-expiry: 600000       # 10 minutes
+
+  secret-key: V2VsbENvbWVPblN0dWR5U2NhbGVyU2VjcmV0S2V5MTIzNDU2
+  validity-time: 3600000
+  issuer: InsureSure
