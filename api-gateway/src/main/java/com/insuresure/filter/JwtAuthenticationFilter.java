@@ -12,10 +12,12 @@ import io.jsonwebtoken.security.Keys;
 import reactor.core.publisher.Mono;
 import java.nio.charset.StandardCharsets;
 
+
+//want your API Gateway to verify JWT tokens before forwarding requests to other services.
 @Component
 public class JwtAuthenticationFilter implements WebFilter {
 
-    @Value("${jwt.secret}")
+    @Value("${jwt.secret}") // present in application.yml
     private String secret;
 
     @Override

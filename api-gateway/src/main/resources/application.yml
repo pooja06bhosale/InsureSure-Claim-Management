@@ -35,3 +35,4 @@ spring:
 
 jwt:
   secret: myJwtSecretKey123456
+  #want your API Gateway to verify JWT tokens before forwarding requests to other services.
