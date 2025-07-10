@@ -16,6 +16,7 @@ public class UserService {
 
     public User getUserDetail(Long id) {
         Optional<User> userOptional = userRepository.findById(id);
+        //optional handles null pointer exception
         if(userOptional.isEmpty()) {
             System.out.println("NO USER FOUND");
             return null;

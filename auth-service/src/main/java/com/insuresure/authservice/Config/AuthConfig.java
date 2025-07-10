@@ -25,19 +25,10 @@ public class AuthConfig {
         return new RestTemplate();
     }
 
-
     @Bean // jwt header -- HS256 or RSA -- for password security
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
-   /* @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
-        httpSecurity.cors().disable();
-        httpSecurity.csrf().disable();
-        httpSecurity.authorizeHttpRequests(authorize -> authorize.anyRequest().permitAll());
-        return httpSecurity.build();
-    }*/
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {

@@ -8,5 +8,5 @@ jwt:
   password-reset-expiry: 600000       # 10 minutes
 
   secret-key: V2VsbENvbWVPblN0dWR5U2NhbGVyU2VjcmV0S2V5MTIzNDU2
-  validity-time: 3600000
+  validity-time: 3600000 #1 hr -- 1 milisec = 100 sec
   issuer: InsureSure

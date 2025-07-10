@@ -5,4 +5,6 @@ public enum State {
     ACTIVE,
     EXPIRED,
  // rather than use boolean variable we use Enum it's good practice
+    //Enum is a way to create a list of fixed, constant values under one name,
+    // making your code clean, safe, and easy to manage.
 }

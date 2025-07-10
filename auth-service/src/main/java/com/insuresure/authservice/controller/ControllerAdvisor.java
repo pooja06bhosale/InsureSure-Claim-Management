@@ -16,3 +16,6 @@ public class ControllerAdvisor {
         return new ResponseEntity<>(exception.getMessage(), HttpStatus.BAD_REQUEST);
     }
 }
+
+//@RequestBody → “When a request comes with JSON, convert it into a Java object and give it to me.”
+//ResponseEntity → “I want to build a proper response with status, body, and headers — and send it to the client.”

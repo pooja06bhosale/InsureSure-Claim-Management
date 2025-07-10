@@ -6,9 +6,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties(prefix = "jwt")
+@ConfigurationProperties(prefix = "jwt")//Fetches from your application.yml config
 @Data
 public class JwtConfigProperties {
+
+    //	Fetches  from your application.yml config
     private long accessTokenExpiry;
     private long refreshTokenExpiry;
     private long emailVerificationExpiry;

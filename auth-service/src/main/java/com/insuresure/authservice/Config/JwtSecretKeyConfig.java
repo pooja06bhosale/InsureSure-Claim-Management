@@ -20,3 +20,7 @@ public class JwtSecretKeyConfig {
         return Keys.hmacShaKeyFor(keyBytes);
     }
 }
+//jwtConfigProperties.getSecretKey() --	Fetches the secret key string from your application.yml config
+//Decoders.BASE64.decode(...) --	Decodes the Base64-encoded string into raw bytes
+//eys.hmacShaKeyFor(keyBytes)	--
+// Creates a SecretKey object using those decoded bytes, for HMAC-SHA signature algorithm (used in JWT

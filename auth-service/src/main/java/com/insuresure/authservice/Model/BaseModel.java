@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Setter
 @Getter
-@MappedSuperclass
+@MappedSuperclass // no need to create table
 public abstract class BaseModel {
 
     @Id
