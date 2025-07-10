@@ -1,21 +1,19 @@
+server:
+  port: 8085
 
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
       server:
-        port: 8085
+        git:
+          uri: D:/insuresure-config-repo   # or D:\\insuresure-config-repo
 
-      spring:
-        application:
-          name: config-server
-
-        cloud:
-          config:
-            server:
-              git:
-                uri: file:///D:/InsureSure-Claim-Management/config-repo
-
-      eureka:
-        client:
-          register-with-eureka: true
-          fetch-registry: true
-          service-url:
-            defaultZone: http://localhost:8761/eureka/
-
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

@@ -1,0 +1,18 @@
+📖 What does Config Server do?
+✔️ It connects to the Config Repo (Git folder or cloud GitHub repo)
+✔️ Fetches config files for a microservice when that service starts
+✔️ Serves config dynamically to services via HTTP endpoint
+
+
+For example:
+👉 When authservice starts, it sends a request:
+
+GET http://localhost:8085/authservice/default
+
+And Config Server responds with config for authservice from the Config Repo.
+
+
+------------------------
+👉 Config Repo → stores config files
+👉 Config Server → serves those configs to services
+👉 Microservices → fetch config from Config Server at startup

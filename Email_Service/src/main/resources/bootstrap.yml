@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Email_Service
+
+  cloud:
+    config:
+      uri: http://localhost:8085
