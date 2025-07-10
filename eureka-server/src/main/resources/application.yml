@@ -10,3 +10,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
 
+#false here means 👉 "I am the boss registry — I neither register myself, nor fetch from others."

@@ -16,7 +16,7 @@ import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 
-// kafka producer
+// kafka consumer
 @Component
 public class SendEmailConsumer {
 
@@ -26,7 +26,7 @@ public class SendEmailConsumer {
 
     private static final Logger logger = LoggerFactory.getLogger(SendEmailConsumer.class); // for log
 
- // topic -- sginup from auth service -- auth controller
+    // topic -- sginup from auth service -- auth controller
     //auth service is produser
     //email service -- consumer
     @KafkaListener(topics = "signup",groupId = "emailService")
